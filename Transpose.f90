@@ -92,7 +92,7 @@ program Transpose
         end do
     end do
 
-    !THIS IS HOW YOU MAKE AN OUTPUT FILE NAME WITHOUT HAVING TO MANUALLY ENTER IT!
+    !THIS IS HOW YOU MAKE AN OUTPUT FILE NAME WITHOUT HAVING TO ENTER IT MANUALLY!
     trimIndex = index(fileIn, '.') - 1
     fileOut = trim(fileIn(1:trimIndex)) // trim('Transpose.txt')
     open(4, file = fileOut, status = 'unknown')
