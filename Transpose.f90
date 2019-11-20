@@ -19,7 +19,7 @@ program Transpose
     do
         read(3, *, iostat = IO) dummyVariable
         if (IO > 0) then ! I think this means you're reading past the total elements in the file.
-            print*, "Bad news."
+            print*, "Your shit's fucked up."
             exit
         else if (IO < 0) then ! I think this means you're reading past the total rows in the file.
             exit
